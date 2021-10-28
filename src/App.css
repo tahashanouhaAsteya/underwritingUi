@@ -60,4 +60,7 @@
 .question label input{
   width: 200px;
 }
+.question label select{
+  width: 200px;
+}
 
