@@ -61,6 +61,9 @@
 .question label input{
   width: 100%;
 }
+.question label select{
+  width: 200px;
+}
 
 input[type=text], select {
   width: 100%;

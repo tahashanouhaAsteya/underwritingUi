@@ -44,8 +44,8 @@ const App = () => {
           <label>
             What is your first Name?
             <input
-              name='FirstName'
-              type='text'
+              name="FirstName"
+              type="text"
               value={values['FirstName']}
               onChange={(v) => onFieldChange('FirstName', v.target.value)}
             />
@@ -55,8 +55,8 @@ const App = () => {
           <label>
             What is your middle name?
             <input
-              name='MiddleName'
-              type='text'
+              name="MiddleName"
+              type="text"
               value={values['MiddleName']}
               onChange={(v) => onFieldChange('MiddleName', v.target.value)}
             />
@@ -66,8 +66,8 @@ const App = () => {
           <label>
             What is your last name?
             <input
-              name='LastName'
-              type='text'
+              name="LastName"
+              type="text"
               value={values['LastName']}
               onChange={(v) => onFieldChange('LastName', v.target.value)}
             />
@@ -77,22 +77,22 @@ const App = () => {
           <label>
             What is your Gender?
             <select
-              name='Gender'
+              name="Gender"
               value={values['Gender']}
               onChange={(v) => onFieldChange('Gender', v.target.value)}
             >
-              <option value='other'>other</option>
-              <option value='female'>female</option>
-              <option value='male'>male</option>
+              <option value="other">other</option>
+              <option value="female">female</option>
+              <option value="male">male</option>
             </select>
           </label>
         </div>
         <div className={'question'}>
           <label>
-            What is your Date Of Birth
+            What is your Date Of Birth?
             <input
-              name='DateOfBirth'
-              type='text'
+              name="DateOfBirth"
+              type="text"
               value={values['DateOfBirth']}
               onChange={(v) => onFieldChange('DateOfBirth', v.target.value)}
             />
@@ -100,10 +100,10 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            What is the Resident Address Zip
+            What is the Resident Address Zip?
             <input
-              name='ResidentAddressZip'
-              type='text'
+              name="ResidentAddressZip"
+              type="text"
               value={values['ResidentAddressZip']}
               onChange={(v) =>
                 onFieldChange('ResidentAddressZip', v.target.value)
@@ -114,33 +114,37 @@ const App = () => {
         <div className={'question'}>
           <label>
             Are you Employed?
-            <input
-              name='Employed'
-              type='text'
+            <select
+              name="Employed"
               value={values['Employed']}
               onChange={(v) => onFieldChange('Employed', v.target.value)}
-            />
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </label>
         </div>
         <div className={'question'}>
           <label>
-            Worked For Min Days And Hours?
-            <input
-              name='WorkedForMinDaysAndHours'
-              type='text'
+            Worked For 180 Min Days And Hours?
+            <select
+              name="WorkedForMinDaysAndHours"
               value={values['WorkedForMinDaysAndHours']}
               onChange={(v) =>
                 onFieldChange('WorkedForMinDaysAndHours', v.target.value)
               }
-            />
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </label>
         </div>
         <div className={'question'}>
           <label>
-            what is your Weekly Work Hours
+            Weekly Work Hours?
             <input
-              name='WeeklyWorkHours'
-              type='text'
+              name="WeeklyWorkHours"
+              type="number"
               value={values['WeeklyWorkHours']}
               onChange={(v) => onFieldChange('WeeklyWorkHours', v.target.value)}
             />
@@ -148,10 +152,10 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Occupation Class
+            what is your Occupation Class?
             <input
-              name='OccupationClass'
-              type='text'
+              name="OccupationClass"
+              type="text"
               value={values['OccupationClass']}
               onChange={(v) => onFieldChange('OccupationClass', v.target.value)}
             />
@@ -159,10 +163,10 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Body Mass Index
+            what is your Body Mass Index?
             <input
-              name='BodyMassIndex'
-              type='text'
+              name="BodyMassIndex"
+              type="text"
               value={values['BodyMassIndex']}
               onChange={(v) => onFieldChange('BodyMassIndex', v.target.value)}
             />
@@ -170,23 +174,25 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Illegal Drugs Usage
-            <input
-              name='IllegalDrugsUsage'
-              type='text'
+            Do you use Illegal Drugs?
+             <select
+              name="IllegalDrugsUsage"
               value={values['IllegalDrugsUsage']}
               onChange={(v) =>
                 onFieldChange('IllegalDrugsUsage', v.target.value)
               }
-            />
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </label>
         </div>
         <div className={'question'}>
           <label>
-            what is the Illegal Drugs Usage Type
+            What is the Illegal Drugs Usage Type?
             <input
-              name='IllegalDrugsUsageType'
-              type='text'
+              name="IllegalDrugsUsageType"
+              type="text"
               value={values['IllegalDrugsUsageType']}
               onChange={(v) =>
                 onFieldChange('IllegalDrugsUsageType', v.target.value)
@@ -196,10 +202,10 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Illegal Drugs Usage Frequency
+            What is the Illegal Drugs Usage Frequency?
             <input
-              name='IllegalDrugsUsageFrequency'
-              type='text'
+              name="IllegalDrugsUsageFrequency"
+              type="text"
               value={values['IllegalDrugsUsageFrequency']}
               onChange={(v) =>
                 onFieldChange('IllegalDrugsUsageFrequency', v.target.value)
@@ -209,10 +215,10 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Illegal Drugs Usage Last Use
+            What is the Illegal Drugs Usage Last Used?
             <input
-              name='IllegalDrugsUsageLastUse'
-              type='text'
+              name="IllegalDrugsUsageLastUse"
+              type="text"
               value={values['IllegalDrugsUsageLastUse']}
               onChange={(v) =>
                 onFieldChange('IllegalDrugsUsageLastUse', v.target.value)
@@ -222,43 +228,49 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Criminal Charges
-            <input
-              name='CriminalCharges'
-              type='text'
+            Have you had Criminal Charges?
+            <select
+              name="CriminalCharges"
               value={values['CriminalCharges']}
               onChange={(v) => onFieldChange('CriminalCharges', v.target.value)}
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+        </div>
+        <div className={'question'}>
+          <label>
+            Criminal Charges Reason
+            <input
+              name="CriminalChargesReason"
+              type="text"
+              value={values['CriminalChargesReason']}
+              onChange={(v) =>
+                onFieldChange('CriminalChargesReason', v.target.value)
+              }
             />
           </label>
         </div>
         <div className={'question'}>
           <label>
-            what is the Criminal Charges
-            <input
-              name='CriminalCharges'
-              type='text'
-              value={values['CriminalCharges']}
-              onChange={(v) => onFieldChange('CriminalCharges', v.target.value)}
-            />
-          </label>
-        </div>
-        <div className={'question'}>
-          <label>
-            what is the Bankruptcy
-            <input
-              name='Bankruptcy'
-              type='text'
+            Are you Bankrupt?
+             <select
+              name="Bankruptcy"
               value={values['Bankruptcy']}
               onChange={(v) => onFieldChange('Bankruptcy', v.target.value)}
-            />
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </label>
         </div>
         <div className={'question'}>
           <label>
-            what is the BankruptcyCause Cause
+            What is the Bankruptcy Cause?
             <input
-              name='BankruptcyCause'
-              type='text'
+              name="BankruptcyCause"
+              type="text"
               value={values['BankruptcyCause']}
               onChange={(v) => onFieldChange('BankruptcyCause', v.target.value)}
             />
@@ -266,10 +278,10 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Bankruptcy Discharge
+            What is the Bankruptcy Discharge?
             <input
-              name='BankruptcyDischarge'
-              type='text'
+              name="BankruptcyDischarge"
+              type="text"
               value={values['BankruptcyDischarge']}
               onChange={(v) =>
                 onFieldChange('BankruptcyDischarge', v.target.value)
@@ -279,10 +291,10 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Bankruptcy Discharge Date
+            What is the Bankruptcy Discharge Date?
             <input
-              name='BankruptcyDischargeDate'
-              type='text'
+              name="BankruptcyDischargeDate"
+              type="text"
               value={values['BankruptcyDischargeDate']}
               onChange={(v) =>
                 onFieldChange('BankruptcyDischargeDate', v.target.value)
@@ -294,8 +306,8 @@ const App = () => {
           <label>
             Decision Type
             <input
-              name='DecisionType'
-              type='text'
+              name="DecisionType"
+              type="text"
               value={values['DecisionType']}
               onChange={(v) => onFieldChange('DecisionType', v.target.value)}
             />
@@ -305,8 +317,8 @@ const App = () => {
           <label>
             Decision Value
             <input
-              name='DecisionValue'
-              type='text'
+              name="DecisionValue"
+              type="text"
               value={values['DecisionValue']}
               onChange={(v) => onFieldChange('DecisionValue', v.target.value)}
             />
@@ -316,14 +328,14 @@ const App = () => {
           <label>
             Final Decision
             <input
-              name='FinalDecision'
-              type='text'
+              name="FinalDecision"
+              type="text"
               value={values['FinalDecision']}
               onChange={(v) => onFieldChange('FinalDecision', v.target.value)}
             />
           </label>
         </div>
-        <input type='submit' value='Submit' />
+        <input type="submit" value="Submit" />
       </form>
       <form
         onSubmit={(e) => {
@@ -337,10 +349,12 @@ const App = () => {
           <label>
             What is your first Name?
             <input
-              name='FirstName'
-              type='text'
+              name="FirstName"
+              type="text"
               value={simulationValues['FirstName']}
-              onChange={(v) => onSimulationFieldChange('FirstName', v.target.value)}
+              onChange={(v) =>
+                onSimulationFieldChange('FirstName', v.target.value)
+              }
             />
           </label>
         </div>
@@ -348,10 +362,12 @@ const App = () => {
           <label>
             What is your middle name?
             <input
-              name='MiddleName'
-              type='text'
+              name="MiddleName"
+              type="text"
               value={simulationValues['MiddleName']}
-              onChange={(v) => onSimulationFieldChange('MiddleName', v.target.value)}
+              onChange={(v) =>
+                onSimulationFieldChange('MiddleName', v.target.value)
+              }
             />
           </label>
         </div>
@@ -359,10 +375,12 @@ const App = () => {
           <label>
             What is your last name?
             <input
-              name='LastName'
-              type='text'
+              name="LastName"
+              type="text"
               value={simulationValues['LastName']}
-              onChange={(v) => onSimulationFieldChange('LastName', v.target.value)}
+              onChange={(v) =>
+                onSimulationFieldChange('LastName', v.target.value)
+              }
             />
           </label>
         </div>
@@ -370,13 +388,15 @@ const App = () => {
           <label>
             What is your Gender?
             <select
-              name='Gender'
+              name="Gender"
               value={simulationValues['Gender']}
-              onChange={(v) => onSimulationFieldChange('Gender', v.target.value)}
+              onChange={(v) =>
+                onSimulationFieldChange('Gender', v.target.value)
+              }
             >
-              <option value='other'>other</option>
-              <option value='female'>female</option>
-              <option value='male'>male</option>
+              <option value="other">other</option>
+              <option value="female">female</option>
+              <option value="male">male</option>
             </select>
           </label>
         </div>
@@ -384,10 +404,12 @@ const App = () => {
           <label>
             What is your Date Of Birth
             <input
-              name='DateOfBirth'
-              type='text'
+              name="DateOfBirth"
+              type="text"
               value={simulationValues['DateOfBirth']}
-              onChange={(v) => onSimulationFieldChange('DateOfBirth', v.target.value)}
+              onChange={(v) =>
+                onSimulationFieldChange('DateOfBirth', v.target.value)
+              }
             />
           </label>
         </div>
@@ -395,8 +417,8 @@ const App = () => {
           <label>
             What is the Resident Address Zip
             <input
-              name='ResidentAddressZip'
-              type='text'
+              name="ResidentAddressZip"
+              type="text"
               value={simulationValues['ResidentAddressZip']}
               onChange={(v) =>
                 onSimulationFieldChange('ResidentAddressZip', v.target.value)
@@ -407,79 +429,91 @@ const App = () => {
         <div className={'question'}>
           <label>
             Are you Employed?
-            <input
-              name='Employed'
-              type='text'
-              value={simulationValues['Employed']}
-              onChange={(v) => onSimulationFieldChange('Employed', v.target.value)}
-            />
+            <select
+              name="Employed"
+              value={values['Employed']}
+              onChange={(v) => onFieldChange('Employed', v.target.value)}
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </label>
         </div>
         <div className={'question'}>
           <label>
-            Worked For Min Days And Hours?
-            <input
-              name='WorkedForMinDaysAndHours'
-              type='text'
-              value={simulationValues['WorkedForMinDaysAndHours']}
+            Worked For 180 Min Days And Hours?
+            <select
+              name="WorkedForMinDaysAndHours"
+              value={values['WorkedForMinDaysAndHours']}
               onChange={(v) =>
-                onSimulationFieldChange('WorkedForMinDaysAndHours', v.target.value)
+                onFieldChange('WorkedForMinDaysAndHours', v.target.value)
               }
-            />
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </label>
         </div>
         <div className={'question'}>
           <label>
-            what is your Weekly Work Hours
+            Weekly Work Hours?
             <input
-              name='WeeklyWorkHours'
-              type='text'
+              name="WeeklyWorkHours"
+              type="number"
               value={simulationValues['WeeklyWorkHours']}
-              onChange={(v) => onSimulationFieldChange('WeeklyWorkHours', v.target.value)}
-            />
-          </label>
-        </div>
-        <div className={'question'}>
-          <label>
-            what is the Occupation Class
-            <input
-              name='OccupationClass'
-              type='text'
-              value={simulationValues['OccupationClass']}
-              onChange={(v) => onSimulationFieldChange('OccupationClass', v.target.value)}
-            />
-          </label>
-        </div>
-        <div className={'question'}>
-          <label>
-            what is the Body Mass Index
-            <input
-              name='BodyMassIndex'
-              type='text'
-              value={simulationValues['BodyMassIndex']}
-              onChange={(v) => onSimulationFieldChange('BodyMassIndex', v.target.value)}
-            />
-          </label>
-        </div>
-        <div className={'question'}>
-          <label>
-            what is the Illegal Drugs Usage
-            <input
-              name='IllegalDrugsUsage'
-              type='text'
-              value={simulationValues['IllegalDrugsUsage']}
               onChange={(v) =>
-                onSimulationFieldChange('IllegalDrugsUsage', v.target.value)
+                onSimulationFieldChange('WeeklyWorkHours', v.target.value)
               }
             />
           </label>
         </div>
         <div className={'question'}>
           <label>
-            what is the Illegal Drugs Usage Type
+            what is your Occupation Class?
             <input
-              name='IllegalDrugsUsageType'
-              type='text'
+              name="OccupationClass"
+              type="text"
+              value={simulationValues['OccupationClass']}
+              onChange={(v) =>
+                onSimulationFieldChange('OccupationClass', v.target.value)
+              }
+            />
+          </label>
+        </div>
+        <div className={'question'}>
+          <label>
+            what is your Body Mass Index?
+            <input
+              name="BodyMassIndex"
+              type="text"
+              value={simulationValues['BodyMassIndex']}
+              onChange={(v) =>
+                onSimulationFieldChange('BodyMassIndex', v.target.value)
+              }
+            />
+          </label>
+        </div>
+        <div className={'question'}>
+          <label>
+          Do you use Illegal Drugs?
+              <select
+              name="IllegalDrugsUsage"
+              value={values['IllegalDrugsUsage']}
+              onChange={(v) =>
+                onFieldChange('IllegalDrugsUsage', v.target.value)
+              }
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+        </div>
+        <div className={'question'}>
+          <label>
+            what is the Illegal Drugs Usage Type?
+            <input
+              name="IllegalDrugsUsageType"
+              type="text"
               value={simulationValues['IllegalDrugsUsageType']}
               onChange={(v) =>
                 onSimulationFieldChange('IllegalDrugsUsageType', v.target.value)
@@ -489,13 +523,16 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Illegal Drugs Usage Frequency
+            what is the Illegal Drugs Usage Frequency??
             <input
-              name='IllegalDrugsUsageFrequency'
-              type='text'
+              name="IllegalDrugsUsageFrequency"
+              type="text"
               value={simulationValues['IllegalDrugsUsageFrequency']}
               onChange={(v) =>
-                onSimulationFieldChange('IllegalDrugsUsageFrequency', v.target.value)
+                onSimulationFieldChange(
+                  'IllegalDrugsUsageFrequency',
+                  v.target.value,
+                )
               }
             />
           </label>
@@ -504,65 +541,81 @@ const App = () => {
           <label>
             what is the Illegal Drugs Usage Last Use
             <input
-              name='IllegalDrugsUsageLastUse'
-              type='text'
+              name="IllegalDrugsUsageLastUse"
+              type="text"
               value={simulationValues['IllegalDrugsUsageLastUse']}
               onChange={(v) =>
-                onSimulationFieldChange('IllegalDrugsUsageLastUse', v.target.value)
+                onSimulationFieldChange(
+                  'IllegalDrugsUsageLastUse',
+                  v.target.value,
+                )
               }
             />
           </label>
         </div>
         <div className={'question'}>
           <label>
+            Have you had Criminal Charges?
+            <select
+              name="CriminalCharges"
+              value={simulationValues['CriminalCharges']}
+              onChange={(v) =>
+                onSimulationFieldChange('CriminalCharges', v.target.value)
+              }
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+        </div>
+
+        <div className={'question'}>
+          <label>
             what is the Criminal Charges
             <input
-              name='CriminalCharges'
-              type='text'
+              name="CriminalCharges"
+              type="text"
               value={simulationValues['CriminalCharges']}
-              onChange={(v) => onSimulationFieldChange('CriminalCharges', v.target.value)}
+              onChange={(v) =>
+                onSimulationFieldChange('CriminalCharges', v.target.value)
+              }
             />
           </label>
         </div>
         <div className={'question'}>
           <label>
-            what is the Criminal Charges
-            <input
-              name='CriminalCharges'
-              type='text'
-              value={simulationValues['CriminalCharges']}
-              onChange={(v) => onSimulationFieldChange('CriminalCharges', v.target.value)}
-            />
-          </label>
-        </div>
-        <div className={'question'}>
-          <label>
-            what is the Bankruptcy
-            <input
-              name='Bankruptcy'
-              type='text'
+            Are you Bankrupt?
+             <select
+              name="Bankruptcy"
               value={simulationValues['Bankruptcy']}
-              onChange={(v) => onSimulationFieldChange('Bankruptcy', v.target.value)}
-            />
+              onChange={(v) =>
+                onSimulationFieldChange('Bankruptcy', v.target.value)
+              }
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </label>
         </div>
         <div className={'question'}>
           <label>
-            what is the BankruptcyCause Cause
+            What is the Bankruptcy Cause?
             <input
-              name='BankruptcyCause'
-              type='text'
+              name="BankruptcyCause"
+              type="text"
               value={simulationValues['BankruptcyCause']}
-              onChange={(v) => onSimulationFieldChange('BankruptcyCause', v.target.value)}
+              onChange={(v) =>
+                onSimulationFieldChange('BankruptcyCause', v.target.value)
+              }
             />
           </label>
         </div>
         <div className={'question'}>
           <label>
-            what is the Bankruptcy Discharge
+            what is the Bankruptcy Discharge?
             <input
-              name='BankruptcyDischarge'
-              type='text'
+              name="BankruptcyDischarge"
+              type="text"
               value={simulationValues['BankruptcyDischarge']}
               onChange={(v) =>
                 onSimulationFieldChange('BankruptcyDischarge', v.target.value)
@@ -572,18 +625,21 @@ const App = () => {
         </div>
         <div className={'question'}>
           <label>
-            what is the Bankruptcy Discharge Date
+            what is the Bankruptcy Discharge Date?
             <input
-              name='BankruptcyDischargeDate'
-              type='text'
+              name="BankruptcyDischargeDate"
+              type="text"
               value={simulationValues['BankruptcyDischargeDate']}
               onChange={(v) =>
-                onSimulationFieldChange('BankruptcyDischargeDate', v.target.value)
+                onSimulationFieldChange(
+                  'BankruptcyDischargeDate',
+                  v.target.value,
+                )
               }
             />
           </label>
         </div>
-        <input type='submit' value='Submit' />
+        <input type="submit" value="Submit" />
       </form>
     </div>
   );
