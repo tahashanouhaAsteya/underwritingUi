@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+.mainContainer{ 
+  width: 95%;
+  height: auto;
+  margin: 50px 0 0 50px;
+  padding: 25px;
+  max-width: 950px;
+}
+
+.question{
+  margin-bottom: 30px;
+}
+.question label{
+  display: flex;
+  flex-direction: column;
+}
+.question label input{
+  width: 200px;
+}
