@@ -339,8 +339,8 @@ const App = () => {
             <input
               name='FirstName'
               type='text'
-              value={values['FirstName']}
-              onChange={(v) => onFieldChange('FirstName', v.target.value)}
+              value={simulationValues['FirstName']}
+              onChange={(v) => onSimulationFieldChange('FirstName', v.target.value)}
             />
           </label>
         </div>
@@ -350,8 +350,8 @@ const App = () => {
             <input
               name='MiddleName'
               type='text'
-              value={values['MiddleName']}
-              onChange={(v) => onFieldChange('MiddleName', v.target.value)}
+              value={simulationValues['MiddleName']}
+              onChange={(v) => onSimulationFieldChange('MiddleName', v.target.value)}
             />
           </label>
         </div>
@@ -361,8 +361,8 @@ const App = () => {
             <input
               name='LastName'
               type='text'
-              value={values['LastName']}
-              onChange={(v) => onFieldChange('LastName', v.target.value)}
+              value={simulationValues['LastName']}
+              onChange={(v) => onSimulationFieldChange('LastName', v.target.value)}
             />
           </label>
         </div>
@@ -371,8 +371,8 @@ const App = () => {
             What is your Gender?
             <select
               name='Gender'
-              value={values['Gender']}
-              onChange={(v) => onFieldChange('Gender', v.target.value)}
+              value={simulationValues['Gender']}
+              onChange={(v) => onSimulationFieldChange('Gender', v.target.value)}
             >
               <option value='other'>other</option>
               <option value='female'>female</option>
@@ -386,8 +386,8 @@ const App = () => {
             <input
               name='DateOfBirth'
               type='text'
-              value={values['DateOfBirth']}
-              onChange={(v) => onFieldChange('DateOfBirth', v.target.value)}
+              value={simulationValues['DateOfBirth']}
+              onChange={(v) => onSimulationFieldChange('DateOfBirth', v.target.value)}
             />
           </label>
         </div>
@@ -397,9 +397,9 @@ const App = () => {
             <input
               name='ResidentAddressZip'
               type='text'
-              value={values['ResidentAddressZip']}
+              value={simulationValues['ResidentAddressZip']}
               onChange={(v) =>
-                onFieldChange('ResidentAddressZip', v.target.value)
+                onSimulationFieldChange('ResidentAddressZip', v.target.value)
               }
             />
           </label>
@@ -410,8 +410,8 @@ const App = () => {
             <input
               name='Employed'
               type='text'
-              value={values['Employed']}
-              onChange={(v) => onFieldChange('Employed', v.target.value)}
+              value={simulationValues['Employed']}
+              onChange={(v) => onSimulationFieldChange('Employed', v.target.value)}
             />
           </label>
         </div>
@@ -421,9 +421,9 @@ const App = () => {
             <input
               name='WorkedForMinDaysAndHours'
               type='text'
-              value={values['WorkedForMinDaysAndHours']}
+              value={simulationValues['WorkedForMinDaysAndHours']}
               onChange={(v) =>
-                onFieldChange('WorkedForMinDaysAndHours', v.target.value)
+                onSimulationFieldChange('WorkedForMinDaysAndHours', v.target.value)
               }
             />
           </label>
@@ -434,8 +434,8 @@ const App = () => {
             <input
               name='WeeklyWorkHours'
               type='text'
-              value={values['WeeklyWorkHours']}
-              onChange={(v) => onFieldChange('WeeklyWorkHours', v.target.value)}
+              value={simulationValues['WeeklyWorkHours']}
+              onChange={(v) => onSimulationFieldChange('WeeklyWorkHours', v.target.value)}
             />
           </label>
         </div>
@@ -445,8 +445,8 @@ const App = () => {
             <input
               name='OccupationClass'
               type='text'
-              value={values['OccupationClass']}
-              onChange={(v) => onFieldChange('OccupationClass', v.target.value)}
+              value={simulationValues['OccupationClass']}
+              onChange={(v) => onSimulationFieldChange('OccupationClass', v.target.value)}
             />
           </label>
         </div>
@@ -456,8 +456,8 @@ const App = () => {
             <input
               name='BodyMassIndex'
               type='text'
-              value={values['BodyMassIndex']}
-              onChange={(v) => onFieldChange('BodyMassIndex', v.target.value)}
+              value={simulationValues['BodyMassIndex']}
+              onChange={(v) => onSimulationFieldChange('BodyMassIndex', v.target.value)}
             />
           </label>
         </div>
@@ -467,9 +467,9 @@ const App = () => {
             <input
               name='IllegalDrugsUsage'
               type='text'
-              value={values['IllegalDrugsUsage']}
+              value={simulationValues['IllegalDrugsUsage']}
               onChange={(v) =>
-                onFieldChange('IllegalDrugsUsage', v.target.value)
+                onSimulationFieldChange('IllegalDrugsUsage', v.target.value)
               }
             />
           </label>
@@ -480,9 +480,9 @@ const App = () => {
             <input
               name='IllegalDrugsUsageType'
               type='text'
-              value={values['IllegalDrugsUsageType']}
+              value={simulationValues['IllegalDrugsUsageType']}
               onChange={(v) =>
-                onFieldChange('IllegalDrugsUsageType', v.target.value)
+                onSimulationFieldChange('IllegalDrugsUsageType', v.target.value)
               }
             />
           </label>
@@ -493,9 +493,9 @@ const App = () => {
             <input
               name='IllegalDrugsUsageFrequency'
               type='text'
-              value={values['IllegalDrugsUsageFrequency']}
+              value={simulationValues['IllegalDrugsUsageFrequency']}
               onChange={(v) =>
-                onFieldChange('IllegalDrugsUsageFrequency', v.target.value)
+                onSimulationFieldChange('IllegalDrugsUsageFrequency', v.target.value)
               }
             />
           </label>
@@ -506,9 +506,9 @@ const App = () => {
             <input
               name='IllegalDrugsUsageLastUse'
               type='text'
-              value={values['IllegalDrugsUsageLastUse']}
+              value={simulationValues['IllegalDrugsUsageLastUse']}
               onChange={(v) =>
-                onFieldChange('IllegalDrugsUsageLastUse', v.target.value)
+                onSimulationFieldChange('IllegalDrugsUsageLastUse', v.target.value)
               }
             />
           </label>
@@ -519,8 +519,8 @@ const App = () => {
             <input
               name='CriminalCharges'
               type='text'
-              value={values['CriminalCharges']}
-              onChange={(v) => onFieldChange('CriminalCharges', v.target.value)}
+              value={simulationValues['CriminalCharges']}
+              onChange={(v) => onSimulationFieldChange('CriminalCharges', v.target.value)}
             />
           </label>
         </div>
@@ -530,8 +530,8 @@ const App = () => {
             <input
               name='CriminalCharges'
               type='text'
-              value={values['CriminalCharges']}
-              onChange={(v) => onFieldChange('CriminalCharges', v.target.value)}
+              value={simulationValues['CriminalCharges']}
+              onChange={(v) => onSimulationFieldChange('CriminalCharges', v.target.value)}
             />
           </label>
         </div>
@@ -541,8 +541,8 @@ const App = () => {
             <input
               name='Bankruptcy'
               type='text'
-              value={values['Bankruptcy']}
-              onChange={(v) => onFieldChange('Bankruptcy', v.target.value)}
+              value={simulationValues['Bankruptcy']}
+              onChange={(v) => onSimulationFieldChange('Bankruptcy', v.target.value)}
             />
           </label>
         </div>
@@ -552,8 +552,8 @@ const App = () => {
             <input
               name='BankruptcyCause'
               type='text'
-              value={values['BankruptcyCause']}
-              onChange={(v) => onFieldChange('BankruptcyCause', v.target.value)}
+              value={simulationValues['BankruptcyCause']}
+              onChange={(v) => onSimulationFieldChange('BankruptcyCause', v.target.value)}
             />
           </label>
         </div>
@@ -563,9 +563,9 @@ const App = () => {
             <input
               name='BankruptcyDischarge'
               type='text'
-              value={values['BankruptcyDischarge']}
+              value={simulationValues['BankruptcyDischarge']}
               onChange={(v) =>
-                onFieldChange('BankruptcyDischarge', v.target.value)
+                onSimulationFieldChange('BankruptcyDischarge', v.target.value)
               }
             />
           </label>
@@ -576,9 +576,9 @@ const App = () => {
             <input
               name='BankruptcyDischargeDate'
               type='text'
-              value={values['BankruptcyDischargeDate']}
+              value={simulationValues['BankruptcyDischargeDate']}
               onChange={(v) =>
-                onFieldChange('BankruptcyDischargeDate', v.target.value)
+                onSimulationFieldChange('BankruptcyDischargeDate', v.target.value)
               }
             />
           </label>
