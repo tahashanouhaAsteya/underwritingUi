@@ -42,56 +42,78 @@ const App = () => {
         <h1>Data Entry</h1>
         <div className={'question'}>
           <label>
-            Question One
+            What is your first Name?
             <input
-              name="questionOne"
+              name="FirstName"
               type="text"
-              value={values['questionOne']}
-              onChange={(v) => onFieldChange('questionOne', v.target.value)}
+              value={values['FirstName']}
+              onChange={(v) => onFieldChange('FirstName', v.target.value)}
             />
           </label>
         </div>
         <div className={'question'}>
           <label>
-            Question Two
+            What is your middle name?
             <input
-              name="questionTwo"
+              name="MiddleName"
               type="text"
-              value={values['questionTwo']}
-              onChange={(v) => onFieldChange('questionTwo', v.target.value)}
+              value={values['MiddleName']}
+              onChange={(v) => onFieldChange('MiddleName', v.target.value)}
             />
           </label>
         </div>
         <div className={'question'}>
           <label>
-            Question Three
+            What is your last name?
             <input
-              name="questionThree"
+              name="LastName"
               type="text"
-              value={values['questionThree']}
-              onChange={(v) => onFieldChange('questionThree', v.target.value)}
+              value={values['LastName']}
+              onChange={(v) => onFieldChange('LastName', v.target.value)}
             />
           </label>
         </div>
         <div className={'question'}>
           <label>
-            Question Four
+            What is your Gender?
             <input
-              name="questionFour"
+              name="Gender"
               type="text"
-              value={values['questionFour']}
-              onChange={(v) => onFieldChange('questionFour', v.target.value)}
+              value={values['Gender']}
+              onChange={(v) => onFieldChange('Gender', v.target.value)}
             />
           </label>
         </div>
         <div className={'question'}>
           <label>
-            Decision
+            Decision Type
             <input
-              name="decision"
+              name="DecisionType"
               type="text"
-              value={values['decision']}
-              onChange={(v) => onFieldChange('decision', v.target.value)}
+              value={values['DecisionType']}
+              onChange={(v) => onFieldChange('DecisionType', v.target.value)}
+            />
+          </label>
+        </div>
+        <div className={'question'}>
+          <label>
+            Decision Type
+            <input
+              name="DecisionType"
+              type="text"
+              value={values['DecisionType']}
+              onChange={(v) => onFieldChange('DecisionType', v.target.value)}
+            />
+          </label>
+        </div>
+        <div className={'question'}>
+          <label>
+            Final Decision
+            <input
+              name="FinalDecision"
+              type="text"
+              value={values['FinalDecision']}
+              onChange={(v) => onFieldChange('FinalDecision', v.target.value)}
             />
           </label>
         </div>
