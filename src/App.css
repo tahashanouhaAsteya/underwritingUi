@@ -52,7 +52,7 @@
 
 
 .question{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .question label{
   display: flex;
@@ -62,10 +62,10 @@
   width: 100%;
 }
 .question label select{
-  width: 200px;
+  width: 100%;
 }
 
-input[type=text], select {
+input[type=text], input[type=number], select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
